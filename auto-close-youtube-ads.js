@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Auto Close YouTube Ads
 // @namespace    https://github.com/Ssawa
-// @version      1.2.1
+// @version      1.2.2
 // @description  Close and/or Mute YouTube ads automatically!
 // @author       Original: fuzetsu, Forked by: CJ DiMaggio
 // @match        https://*.youtube.com/*
@@ -199,7 +199,7 @@ GM_registerMenuCommand(SCRIPT_NAME + ': ' + (HIDE_AD ? 'disable' : 'enable') + '
   Util.storeSet('HIDE_AD', !HIDE_AD);
   location.reload();
 });
-GM_registerMenuCommand(SCRIPT_NAME + ': ' + (AUTO_PAUSE ? 'enable' : 'disable') + ' automatically pause the video after closing the ad.', function() {
+GM_registerMenuCommand(SCRIPT_NAME + ': ' + (AUTO_PAUSE ? 'disable' : 'enable') + ' automatically pausing the video after closing the ad.', function() {
   Util.storeSet('AUTO_PAUSE', !AUTO_PAUSE);
   location.reload();
 });
